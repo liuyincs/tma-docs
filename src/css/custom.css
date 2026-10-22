@@ -1,0 +1,141 @@
+
+:root {
+  /* Design Tokens from Homepage */
+  --navy: #0f1b3d;
+  --navy-rgb: 15, 27, 61;
+  --azure: #e11d48;
+  --azure-rgb: 225, 29, 72;
+  --azure-light: #fb7185;
+  --cream: #fafaf8;
+  --stone: #71717a;
+  --stone-rgb: 113, 113, 122;
+  --warm-white: #f8f7f4;
+  --card-bg: #ffffff;
+  --shadow-rgb: 15, 27, 61;
+
+  /* Infima Overrides */
+  --ifm-font-family-base: system-ui, -apple-system, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+
+  /* Primary Color: TMA red (#e11d48) */
+  --ifm-color-primary: var(--azure);
+  --ifm-color-primary-dark: #cb1a41;
+  --ifm-color-primary-darker: #bf193d;
+  --ifm-color-primary-darkest: #9d1432;
+  --ifm-color-primary-light: #e8355b;
+  --ifm-color-primary-lighter: #ea4265;
+  --ifm-color-primary-lightest: #ef6884;
+
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+
+  /* Backgrounds & Text */
+  --ifm-background-color: var(--warm-white);
+  --ifm-font-color-base: var(--navy);
+  --ifm-card-background-color: var(--card-bg);
+
+  /* Navbar */
+  --ifm-navbar-background-color: var(--warm-white);
+  --ifm-navbar-shadow: 0 1px 0 0 rgba(var(--navy-rgb), 0.08);
+  --ifm-navbar-link-color: var(--navy);
+  --ifm-navbar-link-hover-color: var(--azure);
+}
+
+[data-theme="dark"] {
+  /* Design Tokens for Dark Mode */
+  --navy: #e2e8f0;
+  --navy-rgb: 226, 232, 240;
+  --azure: #fb7185;
+  --azure-rgb: 251, 113, 133;
+  --azure-light: #f43f5e;
+  --cream: #1e293b;
+  --stone: #cbd5e1;
+  --warm-white: #020617;
+  --card-bg: #0f172a;
+  --shadow-rgb: 0, 0, 0;
+
+  /* Infima Overrides */
+  /* Primary Color: TMA red light (#fb7185) */
+  --ifm-color-primary: var(--azure);
+  --ifm-color-primary-dark: #fa5370;
+  --ifm-color-primary-darker: #f94465;
+  --ifm-color-primary-darkest: #f71a42;
+  --ifm-color-primary-light: #fc8f9a;
+  --ifm-color-primary-lighter: #fd9eaa;
+  --ifm-color-primary-lightest: #fecdd3;
+
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+
+  /* Backgrounds & Text */
+  --ifm-background-color: var(--warm-white);
+  --ifm-font-color-base: var(--navy);
+  --ifm-card-background-color: var(--card-bg);
+
+  /* Navbar */
+  --ifm-navbar-background-color: var(--warm-white);
+  --ifm-navbar-shadow: 0 1px 0 0 rgba(var(--navy-rgb), 0.2);
+  --ifm-navbar-link-color: var(--navy);
+  --ifm-navbar-link-hover-color: var(--azure);
+}
+
+/* Navbar Typography Polish */
+.navbar__title {
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+.navbar__item {
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+.navbar-item-disabled {
+  pointer-events: none;
+  cursor: default;
+  opacity: 0.5;
+}
+
+.navbar-item-disabled:hover {
+  color: var(--ifm-navbar-link-color);
+}
+
+/* Navbar Logo */
+.navbar__logo img {
+  border-radius: 8px;
+}
+
+/* GitHub Icon Link */
+.header-github-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 12px;
+}
+
+.header-github-link:hover {
+  opacity: 0.6;
+}
+
+.header-github-link:before {
+  content: "";
+  display: block;
+  width: 24px;
+  height: 24px;
+  background-color: var(--ifm-navbar-link-color);
+  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z'/%3E%3C/svg%3E")
+    no-repeat center / contain;
+  -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z'/%3E%3C/svg%3E")
+    no-repeat center / contain;
+}
+
+.footer {
+  background: var(--warm-white);
+  color: var(--stone);
+  border-top: 1px solid rgba(var(--navy-rgb), 0.08);
+  padding: 32px 24px;
+}
+
+.footer__copyright {
+  text-align: center;
+  font-size: 0.78rem;
+  letter-spacing: 0.03em;
+}

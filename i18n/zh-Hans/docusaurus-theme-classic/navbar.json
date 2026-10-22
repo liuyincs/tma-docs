@@ -1,0 +1,18 @@
+{
+  "title": {
+    "message": "Tag My Audio",
+    "description": "The title in the navbar"
+  },
+  "logo.alt": {
+    "message": "Tag My Audio Logo",
+    "description": "The alt text of navbar logo"
+  },
+  "item.label.Home": {
+    "message": "首页",
+    "description": "Navbar item with label Home"
+  },
+  "item.label.Docs": {
+    "message": "文档",
+    "description": "Navbar item with label Docs"
+  }
+}

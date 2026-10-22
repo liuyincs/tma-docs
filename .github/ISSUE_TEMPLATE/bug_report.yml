@@ -1,0 +1,105 @@
+name: Bug Report / 问题反馈
+description: Report a bug or unexpected behavior / 报告缺陷或异常行为
+title: "[Bug] "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please fill in as much detail as possible to help us investigate.
+        请尽量填写完整信息，以便我们更快定位问题。
+
+        **Do not post passwords, tokens, API keys or invitation codes.**
+        **请勿公开密码、登录令牌、API Key 或邀请凭证。**
+
+  - type: input
+    id: server-version
+    attributes:
+      label: TMA Server Version / 服务端版本号
+      description: "e.g. 0.1.44 / 如 0.1.44"
+      placeholder: "e.g. 0.1.44"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: deployment
+    attributes:
+      label: Deployment / 部署方式
+      options:
+        - Docker
+        - Bare metal / 直接运行
+        - Other / 其他
+    validations:
+      required: true
+
+  - type: input
+    id: host-os
+    attributes:
+      label: Host OS / 宿主机系统
+      description: "Optional. e.g. Synology DSM 7.2, Unraid 7, Ubuntu 24.04, Windows 11 / 选填"
+      placeholder: "e.g. Ubuntu 24.04"
+    validations:
+      required: false
+
+  - type: input
+    id: browser
+    attributes:
+      label: Browser / 浏览器
+      description: "Optional. e.g. Chrome 130, Safari 18 / 选填"
+      placeholder: "e.g. Chrome 130"
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: area
+    attributes:
+      label: Area / 相关功能
+      description: "Optional. Select all that apply / 选填，可多选"
+      options:
+        - label: Tag editing / 标签编辑
+        - label: Batch tasks / 批量任务
+        - label: Library scan / 资料库扫描
+        - label: Library browsing & playback / 曲库浏览与播放
+        - label: Metadata scraping / 元数据刮削
+        - label: Users & permissions / 用户与权限
+        - label: Other / 其他
+    validations:
+      required: false
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description / 问题描述
+      description: A clear and concise description of the problem / 简要说明遇到的问题
+      placeholder: "What happened? / 发生了什么？"
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to Reproduce / 复现步骤
+      description: Numbered steps to reproduce the issue / 按步骤描述如何复现
+      placeholder: |
+        1. Go to ... / 打开 ...
+        2. Click on ... / 点击 ...
+        3. See error / 出现错误
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected Behavior / 预期行为
+      description: What you expected to happen / 你期望发生什么
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual Behavior / 实际行为
+      description: What actually happened / 实际发生了什么
+    validations:
+      required: true

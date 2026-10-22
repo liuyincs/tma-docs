@@ -1,0 +1,48 @@
+.hero {
+  padding: 5rem 0 3rem;
+  text-align: center;
+}
+
+.logo {
+  width: 96px;
+  height: 96px;
+  margin-bottom: 1.5rem;
+}
+
+.title {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.tagline {
+  font-size: 1.2rem;
+  color: var(--stone);
+  max-width: 640px;
+  margin: 0 auto 2rem;
+}
+
+.buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem 0 5rem;
+}
+
+.feature {
+  background: var(--ifm-card-background-color);
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 1px 3px rgba(var(--shadow-rgb), 0.08);
+}
+
+.feature p {
+  margin-bottom: 0;
+  color: var(--stone);
+}
