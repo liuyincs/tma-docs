@@ -14,8 +14,8 @@ const config: Config = {
     v4: true, // Improve compatibility with the upcoming Docusaurus v4
   },
 
-  // TODO: production domain not decided yet. Replace with the real site URL.
-  url: "https://tma.example.com",
+  // Set the production url of your site here
+  url: "https://tma.musiver.cn",
   // Set the /<baseUrl>/ pathname under which your site is served
   baseUrl: "/",
 

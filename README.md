@@ -46,7 +46,8 @@ TMA 可以单独作为曲库服务，也可以作为 Navidrome、Jellyfin、Emby
 
 ## 🚧 项目状态说明
 
-- 当前处于 **邀请测试** 阶段
+- 当前处于 **邀请测试** 阶段：需要先在留音科技官网 [musiver.cn](https://musiver.cn) 注册账号，注册后在官网申请 Tag My Audio 邀请测试
+- 服务端获取方式与安装部署说明即将提供
 - 功能与界面可能随版本更新发生变化
 - 具体支持能力以实际发布版本为准
 
@@ -60,7 +61,9 @@ TMA 可以单独作为曲库服务，也可以作为 Navidrome、Jellyfin、Emby
 pnpm install
 pnpm dev                                  # 本地预览（英文）
 pnpm docusaurus start --locale zh-Hans    # 本地预览（中文）
-pnpm build                                # 构建到 build/
+pnpm build                                # 构建静态站点
 ```
+
+构建产物在 `build/` 目录。
 
 修改页面或文档时，请同步补充中文翻译（见 `AGENTS.md`）。
