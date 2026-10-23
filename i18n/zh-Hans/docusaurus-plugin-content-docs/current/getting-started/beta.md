@@ -8,9 +8,7 @@ Tag My Audio 目前处于邀请测试阶段。
 ## 申请邀请
 
 1. 先在留音科技官网 [musiver.cn](https://musiver.cn) 注册账号。
-2. 注册后在官网申请 Tag My Audio 邀请测试。
-
-<!-- TODO: 确认官网上申请入口的具体位置后补充。 -->
+2. 注册后在 [musiver.cn](https://musiver.cn) 申请 Tag My Audio 邀请测试。
 
 服务端实例需要先用邀请凭证激活，之后才能注册和登录。未激活时服务照常启动、页面可以打开，但注册和登录会被拒绝。
 
