@@ -54,7 +54,7 @@ const config: Config = {
   ],
 
   themeConfig: {
-    // TODO: add a social card image (e.g. img/tma-social-card.jpg)
+    image: "img/tma-social-card.jpg",
     colorMode: {
       respectPrefersColorScheme: true,
     },
