@@ -9,7 +9,7 @@
     "tools:serve": "python3 -m http.server 4173",
     "build": "docusaurus build",
     "swizzle": "docusaurus swizzle",
-    "deploy": "docusaurus deploy",
+    "deploy": "pnpm build && cd build && tar czf - . | ssh musiver-cn 'tar xzf - -C /var/www/tma.musiver.cn'",
     "clear": "docusaurus clear",
     "serve": "docusaurus serve",
     "write-translations": "docusaurus write-translations",
