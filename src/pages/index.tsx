@@ -1,6 +1,7 @@
 import type { ReactNode } from "react";
 import Link from "@docusaurus/Link";
 import Translate, { translate } from "@docusaurus/Translate";
+import useBaseUrl from "@docusaurus/useBaseUrl";
 import Layout from "@theme/Layout";
 import Heading from "@theme/Heading";
 
@@ -48,6 +49,9 @@ const features: Feature[] = [
 ];
 
 export default function Home(): ReactNode {
+  // Use the locale-aware base URL so the hero logo resolves under /zh-Hans/ as well.
+  const logoUrl = useBaseUrl("/img/logo.svg");
+
   return (
     <Layout
       title={translate({ id: "homepage.title", message: "Home" })}
@@ -58,7 +62,7 @@ export default function Home(): ReactNode {
     >
       <header className={styles.hero}>
         <div className="container">
-          <img className={styles.logo} src="/img/logo.svg" alt="Tag My Audio" />
+          <img className={styles.logo} src={logoUrl} alt="Tag My Audio" />
           <Heading as="h1" className={styles.title}>
             Tag My Audio
           </Heading>

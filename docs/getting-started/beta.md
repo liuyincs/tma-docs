@@ -14,4 +14,4 @@ A server instance must be activated with an invitation before anyone can registe
 
 ## Getting the server
 
-How to get the server and the installation and deployment guide are coming soon.
+The server is published as a public Docker image. See [Docker deployment](docker.md) for setup, configuration and upgrades.
