@@ -37,7 +37,7 @@ curl http://<主机>:38080/health
 可用的镜像标签：
 
 - `latest`：最新发布版本。
-- `vX.Y.Z`，例如 `v0.1.45`：固定版本。生产环境建议固定标签，避免一次 `docker pull` 意外升级。
+- `vX.Y.Z`，例如 `v0.1.49`：固定版本。生产环境建议固定标签，避免一次 `docker pull` 意外升级。
 - 两种标签都指向多架构 manifest，Docker 会自动拉取匹配的架构。
 
 ## Docker Compose
@@ -45,7 +45,7 @@ curl http://<主机>:38080/health
 ```yaml
 services:
   tma:
-    image: gitbobobo/tma:v0.1.45
+    image: gitbobobo/tma:v0.1.49
     container_name: tma
     restart: unless-stopped
     # 必须大于 TMA_SHUTDOWN_TIMEOUT_SECS（默认 60 秒）。

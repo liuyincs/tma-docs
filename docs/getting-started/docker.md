@@ -37,7 +37,7 @@ curl http://<host>:38080/health
 Available tags:
 
 - `latest`: the newest release.
-- `vX.Y.Z`, for example `v0.1.45`: a pinned release. Use a pinned tag in production so a `docker pull` does not change versions unexpectedly.
+- `vX.Y.Z`, for example `v0.1.49`: a pinned release. Use a pinned tag in production so a `docker pull` does not change versions unexpectedly.
 - Both tags point to a multi-arch manifest; Docker pulls the matching architecture automatically.
 
 ## Docker Compose
@@ -45,7 +45,7 @@ Available tags:
 ```yaml
 services:
   tma:
-    image: gitbobobo/tma:v0.1.45
+    image: gitbobobo/tma:v0.1.49
     container_name: tma
     restart: unless-stopped
     # Must be greater than TMA_SHUTDOWN_TIMEOUT_SECS (default 60s).
